@@ -1,0 +1,62 @@
+cars
+-
+id VARCHAR PK
+make VARCHAR
+model VARCHAR
+year INT
+transmission VARCHAR
+
+mpg
+-
+car_id INT FK - cars.id
+mpg INT
+fuel VARCHAR
+size_class VARCHAR
+cylinders INT
+displacement_liters INT
+drive INT
+engine_descriptor VARCHAR
+super_charger VARCHAR
+turbo_charger VARCHAR
+
+
+craigs_list
+-
+car_id INT FK - cars.id
+listing_id VARCHAR PK
+make VARCHAR
+model VARCHAR
+year INT
+price INT
+image_url VARCHAR
+description VARCHAR
+paint_color VARCHAR
+state VARCHAR
+city VARCHAR	
+lat INT
+lng INT
+
+
+auction_list
+-
+car_id INT FK - cars.id
+listing_id VARCHAR PK
+make VARCHAR
+model VARCHAR
+year INT
+color VARCHAR
+auction_price INT
+state VARCHAR PK
+lat INT
+lng INT
+
+gas_cost
+-
+car_auction VARCHAR FK - auction_list.listing_id
+car_craigs VARCHAR FK - craigs_list.listing_id
+purchase_state VARCHAR
+purchase_lat INT
+purchase_lng INT
+denver_lat INT
+denver_lng INT
+distance_denver INT
