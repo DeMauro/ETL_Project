@@ -38,5 +38,5 @@ In this repository you will find:
 
 2) SQL: all SQL code, a picture of the table layout, as well as the script to load the datasets into pgAdmin
 
-Note* For the SQL script to work you need to have a config.py file in your local SQL file. This config.py will contain the password for your pgAdmin. 
+Note* For the SQL script to work you need to have a config.py file in your local SQL folder. This config.py will contain the password for your pgAdmin. 
 
