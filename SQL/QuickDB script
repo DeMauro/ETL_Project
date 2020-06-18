@@ -1,62 +1,49 @@
 cars
 -
-id VARCHAR PK
-make VARCHAR
-model VARCHAR
-year INT
-transmission VARCHAR
-
-mpg
--
-car_id INT FK - cars.id
+make VARCHAR PK
+model VARCHAR PK
+year INT PK
 mpg INT
 fuel VARCHAR
 size_class VARCHAR
 cylinders INT
-displacement_liters INT
-drive INT
-engine_descriptor VARCHAR
-super_charger VARCHAR
-turbo_charger VARCHAR
+displacement_liters DECIMAL
+drive VARCHAR
+transmisson VARCHAR
+super_charger BOOLEAN
+turbo_charger BOOLEAN
 
 
 craigs_list
 -
-car_id INT FK - cars.id
-listing_id VARCHAR PK
-make VARCHAR
-model VARCHAR
-year INT
-price INT
+make VARCHAR FK - cars.make
+model VARCHAR FK - cars.model
+year INT FK - cars.year
+craigslist_price INT
 image_url VARCHAR
 description VARCHAR
 paint_color VARCHAR
-state VARCHAR
+state VARCHAR FK >- gas_cost.state
 city VARCHAR	
-lat INT
-lng INT
+lat FLOAT
+lng FLOAT
 
 
 auction_list
 -
-car_id INT FK - cars.id
-listing_id VARCHAR PK
-make VARCHAR
-model VARCHAR
-year INT
+make VARCHAR FK - cars.make
+model VARCHAR FK - cars.model
+year INT FK - cars.year
 color VARCHAR
 auction_price INT
-state VARCHAR PK
-lat INT
-lng INT
+state VARCHAR FK >- gas_cost.state
+lat FLOAT
+lng FLOAT
 
 gas_cost
 -
-car_auction VARCHAR FK - auction_list.listing_id
-car_craigs VARCHAR FK - craigs_list.listing_id
-purchase_state VARCHAR
-purchase_lat INT
-purchase_lng INT
-denver_lat INT
-denver_lng INT
-distance_denver INT
+state VARCHAR
+regular FLOAT
+mid-grade FLOAT
+premium FLOAT
+diesel FLOAT
