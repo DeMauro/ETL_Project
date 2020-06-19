@@ -1,7 +1,12 @@
 # ETL_Project
 
 ### Purpose:
-The goal of this project was to set up a database to assist individuals looking to re-sell used cars from craigslist. One way to turn a profit in the used car market is to purchase cars from out of state on craigslist and then drive them back to Colorado to sell locally. However, one variable in the cost that is often neglected is the price of gas for the trip home. Our project combined four data sets on craigs list car sales, car specifications, and state gas prices to assist individuals in their purchasing decisions. 
+Our goal for this project was to develop a database that would assist individuals in looking for the best information on used cars from craigslist. We help them in doing this by providing multiple data sets that include (1) available cars on craigslist for the month of May 2020 (2) a refined directory of each car's mpg rating and (3) the average gas price in each state.
+
+We believe that we accomplished this goal by providing the user enough data to be able to turn a profit in the used car market by being able to calculate an estimated total cost and potential profit based off of the requested price of the car and the local gas prices in the state the car would be sold in. Our project combined three data sets and we will give them a detailed breakdown below.
+
+### SQL Database: 
+Our database came with the challenge of developing primary keys that would be consistent across all databases. We came to the conclusion that using Composite Primary Keys for make, model, and year would be the variables to make as primary keys because it was the most identifiable and consistent variable in our datasets. 
 
 ### Datasets
 
@@ -32,11 +37,10 @@ Contains: state, price per gallon (Regular, Mid-Grade, Premium, Diesel)
 
 Note: To save space raw data was not stored in the repo and the Resource folder is stored in a gitignore. We suggest anyone working with this repo create a Resource folder in the main directory for this repo. 
 
-In this repository you will find:
+### In this repository you will find:
 
 1) Scripts: This folder contains the scripts used to clean each dataset
 
 2) SQL: all SQL code, a picture of the table layout, as well as the script to load the datasets into pgAdmin
 
 Note* For the SQL script to work you need to have a config.py file in your local SQL folder. This config.py will contain the password for your pgAdmin. 
-
