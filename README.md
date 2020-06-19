@@ -18,14 +18,15 @@ Last Updated: 2020 This data is scraped every few months, it contains most all r
 Contains: make, model, year, price, condition, description, image, location (lat, long: This can be used to assess distance to buyers home state for calculating gas price)
 
 #### mpg:
-Obtained at: https://www.kaggle.com/uciml/autompg-dataset
+mpg:
+Obtained at: https://www.fueleconomy.gov/feg/download.shtml
 
-Original Data: This dataset was taken from the StatLib library which is
-maintained at Carnegie Mellon University.
+Last Updated: Tuesday June 16 2020. Datasets are for all model years (1984–2021), most cars sold on craigs list are older models, and thus covered under this dataset
 
-Last Updated: 2017. Although this is not current, most cars sold on craigs list are older models, and thus covered under this dataset
+Fuel economy data are the result of vehicle testing done at the Environmental Protection Agency's National Vehicle and Fuel Emissions Laboratory in Ann Arbor, Michigan, and by vehicle manufacturers with oversight by EPA.
 
 Contains: make, model, year, engine specs, expected mpg
+
 
 #### gas_price:
 Obtained using API at: https://gasprices.aaa.com/state-gas-price-averages/
@@ -44,3 +45,4 @@ Note: To save space raw data was not stored in the repo and the Resource folder 
 2) SQL: all SQL code, a picture of the table layout, as well as the script to load the datasets into pgAdmin
 
 Note* For the SQL script to work you need to have a config.py file in your local SQL folder. This config.py will contain the password for your pgAdmin. 
+
