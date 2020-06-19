@@ -6,7 +6,7 @@ Our goal for this project was to develop a database that would assist individual
 We believe that we accomplished this goal by providing the user enough data to be able to turn a profit in the used car market by being able to calculate an estimated total cost and potential profit based off of the requested price of the car and the local gas prices in the state the car would be sold in. Our project combined three data sets and we will give them a detailed breakdown below.
 
 ### SQL Database: 
-Our database came with the challenge of developing primary keys that would be consistent across all databases. We came to the conclusion that using Composite Primary Keys for make, model, and year would be the variables to make as primary keys because it was the most identifiable and consistent variable in our datasets. 
+We decided to develop an SQL database purely due to the relationship our data sets were going to have with each other. Our database came with the challenge of developing primary keys that would be consistent across all databases. We came to the conclusion that using Composite Primary Keys for make, model, and year would be the variables to make as primary keys because it was the most identifiable and consistent variable in our datasets. 
 
 ### Datasets
 
